@@ -1,0 +1,65 @@
+<html>
+<title>shop</title>
+<head>
+
+    <style>
+  table, th, td {
+ border: 1px solid black;
+ border-collapse: collapse;
+}
+th, td {
+ padding: 10px;
+}
+th {
+ text-align: left;
+}
+ </style>
+ </head>
+ <body>
+     <form action="cart.php" method="post">
+     Name:<input type="text" name="uname"/><br>
+     Gender:<br>
+     <input type="radio" name="gender" value="m"/>male<br>
+     <input type="radio" name="gender" value="f"/>female<br>
+     Address:<textarea cols="40" rows="5" name="addrs"></textarea><br>
+   Phone no:<input type="text" name="pno"/><br>
+   Payment Option:<br>
+       <input type="radio" name="payment" value="cod"/>CashOnDelivery<br>
+       <input type="radio" name="payment" value="ib"/>InternetBanking<br>
+       <input type="radio" name="payment" value="cre"/>Credit<br>
+       <input type="radio" name="payment" value="deb"/>debit<br>
+
+     </form>
+   <table>
+<caption>product details</caption>
+<thead>
+<tr>
+   <th>product</th>
+   <th>unit price</th>
+   <th>Qty</th>
+</tr>
+</thead>
+<tr>
+   <td>usb pendrive</td>
+   <td>300</td>
+   <td><input type="text"></td>
+</tr>
+<tr>
+   <td>wireless mouse</td>
+   <td>200</td>
+   <td><input type="text"></td>
+</tr>
+<tr>
+   <td>keyboard</td>
+   <td>400</td>
+   <td><input type="text"></td>
+</tr>
+<tr>
+   <td>laptop</td>
+   <td>33000</td>
+   <td><input type="text"></td>
+</tr>
+</table>
+<input type="submit"/>
+</body>
+</html>
